@@ -24,9 +24,6 @@ const About = ({ className }) => {
 						<span className="arrow">{">"}</span>
 					</a>
 				</div>
-				<div className="second">
-					<h4> Nosso time </h4>
-				</div>
 			</div>
 		</Section>
 	);
