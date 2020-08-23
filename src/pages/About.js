@@ -19,7 +19,7 @@ const About = ({ className }) => {
 				<div className="second">
 					<h4>Ajude o Macacast</h4>
 					<p>As responsabilidades precoces não possibilitaram que João Paulo fizesse categorias de base. Ele jogava na várzea, e depois de uma tentativa frustrada em 2008 de entrar para um time, o agora meia largou o futebol para se dedicar exclusivamente ao trabalho de feirante, viajando até o Rio Grande do Norte para vender frutas. Ficava fora de casa de terça a domingo.</p>
-					<a href="https://apoia.se/macacast">
+					<a href="https://apoia.se/ajudeomacacast" target="_blank" rel="noopener noreferrer">
 						<span className="underline">Apoie agora mesmo</span>
 						<span className="arrow">{">"}</span>
 					</a>
