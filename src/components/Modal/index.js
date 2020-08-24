@@ -11,14 +11,11 @@ const Modal = ({ trigger, content }) => {
 
 	const openModal = () => {
 		setVisibility(true);
-		
 		window.scrollTo(0, 0);
-		document.body.style.overflowY = "hidden";
 	};
 
 	const closeModal = () => {
 		setVisibility(false);
-		document.body.style.overflowY = "scroll";
 	}
 
 	if (!visible)
