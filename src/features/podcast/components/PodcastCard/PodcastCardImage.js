@@ -3,15 +3,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const PodcastCardImage = ({ className, src, spotlight }) => {
+const PodcastCardImage = ({ className, src, title, spotlight }) => {
 	return (
-		<img className={className} src={src} alt={"teste"} width={"100%"} />
+		<img className={className} src={src} alt={title} width={"100%"} />
 	);
 }
 
 PodcastCardImage.propTypes = {
 	className: PropTypes.string,
 	src: PropTypes.string,
+	title: PropTypes.string,
 	spotlight: PropTypes.bool
 };
 

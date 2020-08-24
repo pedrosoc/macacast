@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "macacast-podcast",
     "public": "build",
     "ignore": [
       "firebase.json",

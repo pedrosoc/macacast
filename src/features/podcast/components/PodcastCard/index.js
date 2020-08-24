@@ -18,7 +18,7 @@ const PodcastCard = ({ className, podcast, spotlight }) => {
 
 	return (
 		<NavLink to={url} className={className}>
-			<PodcastCardImage spotlight={spotlight} src={podcast.img} />
+			<PodcastCardImage spotlight={spotlight} src={podcast.img} title={podcast.title} />
 			<PodcastCardInfo title={podcast.title} episode={podcast.episode} description={podcast.description} />
 		</NavLink>
 	);

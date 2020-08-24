@@ -9,11 +9,23 @@ import ModalContent from "./ModalContent";
 const Modal = ({ trigger, content }) => {
 	const [visible, setVisibility] = useState(false);
 
+	const openModal = () => {
+		setVisibility(true);
+		
+		window.scrollTo(0, 0);
+		document.body.style.overflowY = "hidden";
+	};
+
+	const closeModal = () => {
+		setVisibility(false);
+		document.body.style.overflowY = "scroll";
+	}
+
 	if (!visible)
-		return <ModalTrigger trigger={trigger} openModal={() => setVisibility(true)} />;
+		return <ModalTrigger trigger={trigger} openModal={openModal} />;
 
 	return (
-		<ModalContent content={content} type={"menu"} closeModal={() => setVisibility(false)} />
+		<ModalContent content={content} type={"menu"} closeModal={closeModal} />
 	);
 };
 

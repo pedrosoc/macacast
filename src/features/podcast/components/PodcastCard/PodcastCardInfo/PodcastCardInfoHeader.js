@@ -3,8 +3,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-import styles from "@/constants/styles";
-
 const PodcastCardInfoHeader = ({ className, title, episode }) => {
 	return (
 		<div className={className}>
@@ -26,12 +24,6 @@ export default styled(PodcastCardInfoHeader)`
     color: #000;
     height: 64px;
 
-    @media only screen and (min-width: ${styles.breakpoint_large}) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     & h3 {
         font-size: 18px;
         margin: 0;
@@ -40,5 +32,6 @@ export default styled(PodcastCardInfoHeader)`
     & span {
         font-size: 16px;
         color: rgba(0,0,0,.4);
+        width: 125px;
     }
 `;

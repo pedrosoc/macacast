@@ -4,7 +4,7 @@ const messages = {
 			home: {
 				title: "MACACAST",
 				subtitle: "O PODCAST DA MAIOR DO INTERIOR",
-				altImg: "Logo - Macacast"
+				altImage: "Logo - Macacast"
 			},
 			header: {
 				title: "Menu",

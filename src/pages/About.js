@@ -13,16 +13,25 @@ const About = ({ className }) => {
 			<div className={className}>
 				<div>
 					<h5>{ i18n.t("about.title") }</h5>
-					<p>A cena se repetia diariamente no bairro Buraco do Afonso, periferia de Guarabira, na Paraíba: era chegar da feira, depois de trabalhar ao lado da mãe e das três irmãs, que o jovem João Paulo tomava um banho, comia alguma coisa rapidamente e saía para jogar bola na rua.</p>
-					<p>A vontade dele sempre foi virar jogador profissional, mas a realidade, por vezes, obrigou que o sonho ficasse em segundo plano. Para ajudar a mãe gari a sustentar a família - os pais se separaram quando ele ainda era criança, foi feirante até os 20 anos e precisou largar o futebol por um tempo.</p>
+					<p>Criado em 2019, o projeto de um podcast criado por pontepretanos para pontepretanos tem um objetivo primordial claro: resgatar o interesse dos torcedores e torcedoras pelo clube, com informações quentes, com opiniões isentas e contundentes, com histórias sobre o seu passado e reforçar a identidade da Ponte Preta. O dia a dia do clube, pós e pré-jogo, entrevistas exclusivas com jogadores que marcaram seu nome em nossa história e até bastidores políticos. O Macacast é a voz do pontepretano das arquibancadas na internet.</p>
 				</div>
 				<div className="second">
 					<h4>Ajude o Macacast</h4>
-					<p>As responsabilidades precoces não possibilitaram que João Paulo fizesse categorias de base. Ele jogava na várzea, e depois de uma tentativa frustrada em 2008 de entrar para um time, o agora meia largou o futebol para se dedicar exclusivamente ao trabalho de feirante, viajando até o Rio Grande do Norte para vender frutas. Ficava fora de casa de terça a domingo.</p>
-					<a href="https://apoia.se/ajudeomacacast" target="_blank" rel="noopener noreferrer">
-						<span className="underline">Apoie agora mesmo</span>
-						<span className="arrow">{">"}</span>
-					</a>
+					<p>Se você curte o nosso trabalho, não deixe de nos prestigiar e ajude a melhorar ainda mais a qualidade do seu podcast preferido e a sua experiência como ouvinte. Fazemos o Macacast com muita paixão e, com as doações, podemos fazer ainda melhor e nos dedicar ainda mais ao projeto. O valor será investido na melhoria de materiais, como a compra de microfones para os membros, pagamento de servidores, gravações, e manutenção de outras estruturas.</p>
+					<p className="list">
+						<span>Você pode fazer a sua doação de duas formas:</span>
+						<a href="https://apoia.se/macacast" target="_blank" rel="noopener noreferrer">
+							<span className="arrow">-</span>
+							<span className="underline">Mensalmente:</span>
+							<span className="link">apoia.se/macacast</span>
+						</a>
+						<a href="https://apoia.se/ajudeomacacast" target="_blank" rel="noopener noreferrer">
+							<span className="arrow">-</span>
+							<span className="underline">Avulso:</span>
+							<span className="link">apoia.se/ajudeomacacast</span>
+						</a>
+					</p>
+					<p>Se você deseja ser patrocinador oficial do projeto, entre em contato conosco por meio de nossas plataformas digitais. Temos certeza de que, com a audiência que temos, a parceria renderá muitos frutos para sua empresa.</p>
 				</div>
 			</div>
 		</Section>
@@ -34,19 +43,37 @@ About.propTypes = {
 }
 
 export default styled(About)`
-	h5 {
+	& h5 {
 		font-size: 35px;
 	}
 
-	.second {
+	& .second {
 		margin-top: 50px;
 	}
 
-	a .underline {
+	& p.list {
+		display: flex;
+		flex-direction: column;
+
+		& > a {
+			margin-top: 5px;
+		}
 	}
 
-	a .arrow {
-		margin-left: 10px;
+	& a {
+		color: #111;
+
+		& span {
+			margin-right: 10px;
+		
+			&.link {
+				color: rgba(0,0,0,.68);
+				border-bottom: solid 1px rgba(0,0,0,.68);
+			}
+		}
+	}
+
+	& a .arrow {
 		border-bottom: 2px solid transparent;
 	}
 `;
